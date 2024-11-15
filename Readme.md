@@ -9,9 +9,9 @@ Additionally, it handles file permissions and directory creation.
 Describe the API for file and directory operations.
 Understand file and directory permission scopes.
 Work with directory structures and file processing on Unix.
-Features
-Directory Creation:
 
+##Features
+Directory Creation:
 Create directories with specified permissions (rwxr-x---).
 Organize files within newly created directories.
 File Processing:
@@ -40,7 +40,7 @@ Once a file is selected, the program will confirm with:
 
 Now processing the chosen file named <filename>
 
-Processing the File
+##Processing the File
 The program reads the selected file and processes the data to categorize movies by release year.
 It creates a new directory in the format: <your_onid>.movies.<random_number>, with permissions rwxr-x---.
 For each release year, the program:
@@ -48,7 +48,7 @@ Creates a text file named YYYY.txt.
 Writes the titles of movies released in that year, one title per line.
 
 
-File Permissions
+##File Permissions
 Directory: rwxr-x--- — owner has full access; group has read and execute permissions.
 Yearly Movie Files: rw-r----- — owner has read/write access; group has read access.
 CSV File Format
@@ -58,7 +58,8 @@ Title: String containing the movie title (e.g., "Iron Man 2").
 Year: Four-digit integer (e.g., 2010).
 Languages: Languages in square brackets, separated by semicolons (e.g., [English;Portuguese]).
 Rating Value: Numeric value between 1 and 10 (e.g., 8.7 or 5).
-Technologies Used
+
+##Technologies Used
 C
 Unix/Linux for file and directory management
 MobaXterm for terminal operations (optional)
@@ -71,7 +72,7 @@ bash
 Copy code
 git clone https://github.com/yourusername/MovieDataProcessor.git
 
-Compile the Program
+##Compile the Program
 bash
 Copy code
 gcc -o movie_data_processor main.c
