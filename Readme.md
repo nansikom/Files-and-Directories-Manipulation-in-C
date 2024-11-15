@@ -102,3 +102,4 @@ Which file you want to process?
 Enter a choice (1 to 3): 1
 
 Now processing the chosen file named movies_1.csv
+Note: This is a school project hosted by Oregon state university
